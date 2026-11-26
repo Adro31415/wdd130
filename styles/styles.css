@@ -1,6 +1,7 @@
 :root {
     --bg-color1: #cccaca;
     --border1: steelblue;
+    --heading-color: darkblue;
     --color: black;
     --shadow: gray;
 }
@@ -36,7 +37,7 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--heading-color);
     border-bottom: 2px solid darkblue;
 }
 
@@ -72,16 +73,17 @@ aside img {
     width: 200px;
     height: auto;
     border: 1px solid var(--border1);
-    padding: 2px;
+    padding: 0;
     box-shadow: 0 0 30px var(--shadow);
-    display: block;
+
 }
 
 aside h2 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 3rem;
+    top: 1rem;
+    color: var(--heading-color);
 }
 
 main img {
